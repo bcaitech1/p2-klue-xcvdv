@@ -48,7 +48,7 @@ python my_train.py
 - learning rate
 - default : 5e-5
 ### --option OPTION
-- model의 input으로 어떤 format으로 사용할지 정하는 인자
+- model의 input으로 어떤 format을 사용할지 정하는 인자
 - 0 : entity1[SEP]entity2[SEP]sentence
 - 1 : entity1 entity2[SEP]sentence
 - 2 : sentence[SEP]entity1[SEP]entity2
