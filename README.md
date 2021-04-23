@@ -73,6 +73,8 @@ python my_train.py
 - 실제 학습에 사용될 data는 train data path에 있는 file입니다.
 - original data와 train data를 나눈 이유는 최초 제공 된 원본 파일은 변경하지 않고 augmentation, label수정을 적용해 새로운 data를 생성하기 위함입니다.
 - original data path : /opt/ml/input/data/train/train2.tsv -> 최초 제공된 train file
+- label type path : /opt/ml/input/data/label_type.pkl -> label file
 - train data path : /opt/ml/input/data/train/newtrain.tsv -> 실제 학습에 사용될 file
 - model save dir : 현재 dir에서 save_model dir안에 모델들이 저장됩니다.
+- test path : /opt/ml/input/data/test/test.tsv -> inference에 사용될 test file
 - submission save dir : 현재 dir에서 prediction dir안에 submission.csv 파일이 생성됩니다.
