@@ -26,7 +26,7 @@ def inference(model_name, model_type, option, device):
             entity_embedding_layers.append(entity_embedding_layer)
         else:
             entity_embedding_layers.append(None)
-        model.load_state_dict(torch.load(f"/opt/ml/code/save_model/{i}fold_bestacc.pt"))
+        model.load_state_dict(torch.load(f"./save_model/{i}fold_bestacc.pt"))
         model.eval()
         models.append(model)
     output_pred = []
